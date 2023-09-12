@@ -1,0 +1,200 @@
+.logo {
+  background-color: #cbbba0;
+  background-image: url("https://art-quiz.netlify.app/219e541dd08c3d7e0966.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 150px;
+  margin: 0;
+  padding-top: 20px;
+  width: 250px;
+}
+.container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1220px;
+  position: relative;
+  transition: left 1s ease;
+  width: 100%;
+}
+.text {
+  background-color: #7b6a58;
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding: 4px 36px 4px 33px;
+  min-width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+.card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 415px;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding-top: 50px;
+  width: 415px;
+}
+.volume_Logo {
+  background-image: url("https://art-quiz.netlify.app/702c499e0ad920b63068.svg");
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+.time_logo {
+  background-image: url("https://art-quiz.netlify.app/99a98d0dd6b2dfa56cd0.svg");
+  height: 100px;
+  width: 85px;
+}
+
+.mini_volume_logo {
+  background-image: url("https://art-quiz.netlify.app/45c814a88a6e9eae112f.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 30px;
+  width: 19px;
+  border: none;
+  background-color: unset;
+  margin-right: 10px;
+}
+.vol_range {
+  -webkit-appearance: none;
+  width: 270px;
+  height: 6px;
+  outline: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    dimgray 0%,
+    dimgray 0%,
+    rgb(229, 229, 229) 0%,
+    rgb(229, 229, 229) 100%
+  );
+}
+
+.vol_range::-moz-range-thumb {
+  height: 20px;
+  width: 100px;
+}
+.common_wrapper {
+  flex-direction: column;
+  margin-bottom: -20px;
+  margin-top: 35px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vol_wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.checkbox {
+  width: 30px;
+  height: 30px;
+  border: 1px solid dimgray;
+}
+.textSetting {
+  color: dimgray;
+  font-family: Arial;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.time_range {
+  -webkit-appearance: none;
+  width: 268px;
+  height: 6px;
+  outline: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    dimgray 0%,
+    dimgray 0%,
+    rgb(229, 229, 229) 0%,
+    rgb(229, 229, 229) 100%
+  );
+}
+.seconds {
+  color: dimgray;
+  font-family: Arial;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+.time_wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.saveButton {
+  background-color: #661004;
+  border: none;
+  box-shadow: 1px 6px 11px 1px rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 55px;
+  min-width: 150px;
+  outline: none;
+  padding: 14px 7px 12px;
+  position: relative;
+  text-transform: capitalize;
+  transition: box-shadow 0.5s ease;
+}
+
+.saveButton:hover {
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 0px) and (max-width: 1120px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+  }
+}

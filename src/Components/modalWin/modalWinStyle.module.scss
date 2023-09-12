@@ -1,0 +1,73 @@
+%score {
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: dimgray;
+  font-family: Arial;
+}
+.modalWinModal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+.modalWinContent {
+  width: 810px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 810px;
+}
+.congratsText {
+  font-size: 36px;
+  padding: 20px;
+  @extend %score;
+}
+.score {
+  font-size: 96px;
+  margin: 96px 0;
+  @extend %score;
+}
+.scoreImg {
+  background-image: url("https://art-quiz.netlify.app/e2090e6771d144a55d5d.png");
+  height: 160px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.twoButtons {
+  display: flex;
+}
+.Btns {
+  background-color: #661004;
+  border: none;
+  box-shadow: 1px 6px 11px 1px rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 55px;
+  min-width: 150px;
+  outline: none;
+  padding: 14px 7px 12px;
+  text-transform: capitalize;
+  transition: box-shadow 0.5s ease;
+}
+.Btns:hover {
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.4);
+}

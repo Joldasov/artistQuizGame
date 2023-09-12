@@ -1,0 +1,98 @@
+%modalAnswerLogo {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60px;
+  margin-bottom: 20px;
+  width: 60px;
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  // background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0%;
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.all_modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal.scale {
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(1);
+}
+.modal_content.active {
+  animation: fade-in-modal 1s forwards;
+}
+.out {
+  animation: fade-out-modal 1s forwards;
+  
+  
+}
+
+@keyframes fade-in-modal {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.modal_content {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  height: 854px;
+  width: 810px;
+  text-align: center;
+}
+
+@keyframes fade-out-modal {
+  0%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-2000px);
+    opacity: 0;
+  }
+}
+
+.ModalcorrectImg {
+  background-image: url("https://art-quiz.netlify.app/4f2e7eda11b11231f2a4.png");
+  @extend %modalAnswerLogo;
+}
+
+.modalTexts {
+  padding-top: 20px;
+}
+
+.modalText {
+  font-size: 22px;
+  color: dimgray;
+}
+.ModalNtn {
+  margin-top: 30px;
+  padding: 10px 40px;
+  background-color: #661004;
+  border: none;
+  box-shadow: 1px 6px 11px 1px rgba(0, 0, 0, 0.7);
+  font-size: 22px;
+  color: #fff;
+}
+
+.ModalIncorrectImg {
+  background-image: url("	https://art-quiz.netlify.app/d6f175a09f5b234409e9.png");
+  @extend %modalAnswerLogo;
+}

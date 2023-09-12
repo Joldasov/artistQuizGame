@@ -1,0 +1,54 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  transform: scale(0);
+}
+.modal_content {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  height: 854px;
+  width: 810px;
+  text-align: center;
+}
+.modal.scale {
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(1);
+}
+.modal_content.active {
+  animation: fade-in-modal 1s forwards;
+}
+.out {
+  animation: fade-out-modal 1s forwards;
+  
+  
+}
+
+@keyframes fade-in-modal {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-modal {
+  0%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-2000px);
+    opacity: 0;
+  }
+}
